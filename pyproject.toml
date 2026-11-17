@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facture-ocr"
+version = "1.0.0"
+description = "Extrait fournisseur, montants, TVA et catégorie des factures PDF/txt, exporte en CSV."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["facture", "invoice", "ocr", "comptabilite", "csv", "llm"]
+classifiers = [
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+facture-ocr = "facture_ocr.cli:main"
+
+[tool.setuptools]
+packages = ["facture_ocr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
