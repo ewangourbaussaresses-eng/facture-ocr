@@ -1,0 +1,8 @@
+SNCF Connect
+Facture n° 778812
+Date : 2026-02-28
+
+Billet Paris - Lyon
+Sous-total HT : 75,00
+TVA 10% : 7,50
+Total TTC : 82,50
